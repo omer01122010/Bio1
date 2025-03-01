@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מערכת שאלות אמריקאיות</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>מערכת שאלות אמריקאיות</h1>
+        </header>
+
+        <div id="loading-screen">
+            <h2>טוען מאגר מידע...</h2>
+            <div class="loader"></div>
+            <div id="loading-status">0/0 קבצים נטענו</div>
+        </div>
+
+        <div id="question-container" style="display: none;">
+            <div id="question-text"></div>
+            <div id="options-container"></div>
+            <div id="feedback" class="hidden"></div>
+            <div class="button-container">
+                <button id="submit-btn" disabled>שלח תשובה</button>
+                <button id="next-btn" disabled>שאלה הבאה</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="pdfProcessor.js"></script>
+    <script src="questionGenerator.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
