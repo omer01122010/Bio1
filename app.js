@@ -35,7 +35,7 @@ async function initApp() {
         console.log('סטטיסטיקה:', pdfProcessor.getStatistics());
     } catch (error) {
         console.error('שגיאה באיתחול האפליקציה:', error);
-        alert('אירעה שגיאה באיתחול האפליקציה. נא לרענן את הדף ולנסות שוב.');
+        document.getElementById('loading-status').textContent = 'שגיאה בטעינת המידע. בדוק את הקונסולה לפרטים.';
     }
 }
 
