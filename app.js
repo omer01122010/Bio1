@@ -1,5 +1,5 @@
-// משתנים גלובליים
-let pdfProcessor;
+// איתחול משתנים גלובליים בתוך פונקציה
+let pdfProcessor; // תגדיר רק כאן, לא תשנה שוב
 let questionGenerator;
 let currentQuestion;
 let selectedAnswer;
@@ -8,7 +8,7 @@ let selectedAnswer;
 async function initApp() {
     try {
         // יצירת מעבד PDF
-        pdfProcessor = new PDFProcessor();
+        pdfProcessor = new PDFProcessor(); // הגדרה ראשונית כאן
         
         // הצגת מסך טעינה
         document.getElementById('loading-screen').style.display = 'block';
@@ -164,3 +164,4 @@ function resetInterface() {
 
 // הפעלת האפליקציה כאשר הדף נטען
 document.addEventListener('DOMContentLoaded', initApp);
+
